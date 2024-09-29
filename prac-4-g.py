@@ -1,4 +1,4 @@
-# Deletion of particular element
+# Deletion of particular element in S.L.L
 
 class node:
     def __init__(self,data):

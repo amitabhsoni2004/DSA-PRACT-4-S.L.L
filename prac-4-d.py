@@ -1,4 +1,4 @@
-# Insertion after a particular element
+# Insertion after a particular element in S.L.L
 
 class node : 
     def __init__(self,data):
