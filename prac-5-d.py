@@ -1,4 +1,4 @@
-# Deletion at start of C.L.L
+# Deletion at end of C.L.L
 
 class node: 
     def __init__(self,data):
@@ -13,36 +13,37 @@ node5 = node(50)
 
 node1.next = node2
 node2.next = node3
-node3.next = node4 
+node3.next = node4
 node4.next = node5
 node5.next = node1
 
 deleted = False
 
 if node1 is None:
-    print("Deletion not possible, L.L empty")
+    print("Deletion not possible, LinkList Empty...")
 else:
-    oldnode = node1
-    data = oldnode.info
-    if oldnode.next == node1:
+    if node1.next == node1:
+        data = node1.info
         node1 = None
         deleted = True
     else:
-        ptr = node1
-        while ptr.next != node1:
-            ptr = ptr.next 
+        ptr1 = node1
+        ptr2 = node1.next
+        while ptr2.next != node1:
+            ptr1 = ptr1.next
+            ptr2 = ptr2.next
         
-        ptr.next = oldnode.next
-        node1 = oldnode.next
+        data = ptr2.info
+        ptr1.next = ptr2.next
         deleted = True
-        
+
 if deleted:
     ptr = node1
     while ptr is not None:
         print(ptr.info)
-        ptr = ptr.next
-        if ptr == node1:
+        if ptr.next == node1:
             break
+        ptr = ptr.next
     print(f"Data {data} has been deleted")
 else:
-    print("Deletion not performed")
+    print("Deletion not performed..")
