@@ -8,7 +8,6 @@ This repository contains implementations and operations on data structures such 
 - [Linked List Operations](#linked-list-operations)
 - [How to Use](#how-to-use)
 - [Contributing](#contributing)
-- [License](#license)
 
 ## Introduction
 This repository is designed to help students understand and implement basic operations on arrays and linked lists as part of their Data Structures and Algorithms (DSA) coursework.
@@ -45,6 +44,3 @@ This repository is designed to help students understand and implement basic oper
 
 ## Contributing
 Contributions are welcome! Please read the [contributing guidelines](CONTRIBUTING.md) before submitting a pull request.
-
-## License
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
