@@ -16,7 +16,7 @@ def delete_operation(node1):
             node1 = None  # Set the head to None, list is now empty
             return node1, data1  # Return None and the deleted data
         else:
-            ptr1 = node1  # Start at the head of the list
+            ptr1 = node1  # Start at the head of the li st
             ptr2 = node1.next  # Start from the second node
             while ptr2.next != node1:  # Traverse to the last node
                 ptr1 = ptr1.next  # Move ptr1 to the next node
