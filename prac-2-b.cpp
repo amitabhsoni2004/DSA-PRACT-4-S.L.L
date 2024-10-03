@@ -4,7 +4,7 @@
 using namespace std;
 
 void create_arr(int arr[50] ,int size ,int k){
-    cout<<"Enter elements now : ";
+    cout<<"Enter elements now in ascending order : ";
     for(int i = 0; i < size; i++){
         cin>>arr[i];
     }
